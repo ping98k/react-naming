@@ -25,19 +25,38 @@ export const collectionNames = {
 
 ## PascalCase
 
-`class`, `type`, `enum`, `interface`
+`class`, `type`, `enum`, `interface`, `const`, `component`
 
 ```TSX
-type MyButtonProps = { title: string };
-const MyButton = (props: MyButtonProps) => <button>{props.title}</button>;
+enum Shape {Circle,Square}
+type MyButtonProps = { shape?: Shape };
+const MyButton = (props: MyButtonProps) => <button />;
+const myButton = <MyButton shape={Shape.Circle} />;
+```
+
+constant that can process in app
+
+```TSX
+const appConfigs = {
+    MaxItem: 10,
+    MaxTimeout: 6000,
+};
+
+const itemList = [];
+if (itemList.length <= appConfigs.MaxItem) {
+    itemList.push("123");
+}
 ```
 
 ## kebab-case
+
 file and folder name which not executable
+
 ```
 /my-images/default-profile.png
 /my-images/index.tsx
 ```
+
 ```TSX
 export const myImages =  {
   default_profile: "./default-profile.png",
@@ -45,6 +64,7 @@ export const myImages =  {
 ```
 
 ## snake_case
+
 constant that communicate with user
 
 ```TSX
@@ -62,17 +82,10 @@ export const en = {
 ```
 
 ## camelCase
+
 variable that can process in app
 
 ```TSX
-const appConfigs = {
-  maxItem: 10,
-  maxTimeout: 6000,
-};
-
 const itemList = [];
-if (itemList.length <= appConfigs.maxItem) {
-  itemList.push("123");
-}
-
+const myFunction = () => {};
 ```
