@@ -2,26 +2,17 @@
 
 File naming conventions in react
 
-## UPPER_CASE_SNAKE_CASE
 
-constant that communicate with another program
+
+## camelCase
+
+variable that can process in app
 
 ```TSX
-export const configs = {
-  WEB_BASE_URL: "https://www.my-web.com/",
-  API_BASE_URL: "https://www.my-api.com/",
-};
-
-export const storageKeys = {
-  NAVIGATION_STATE: "NAVIGATION_STATE",
-  USER_CACHE: "USER_CACHE",
-};
-
-export const collectionNames = {
-  USER_PROFILE: "userProfile",
-  COURSES: "courses",
-};
+let itemList = [];
+const myFunction = () => {};
 ```
+
 
 ## PascalCase
 
@@ -50,7 +41,7 @@ if (itemList.length <= appConfigs.MaxItem) {
 
 ## kebab-case
 
-file and folder name which not executable
+### file and folder name which not executable
 
 ```
 /my-images/default-profile.png
@@ -61,6 +52,18 @@ file and folder name which not executable
 export const myImages =  {
   default_profile: "./default-profile.png",
 };
+```
+
+### file export data
+
+```
+/my-components/MyButton/MyButton.tsx
+/my-components/MyButton/MyButton.hook.tsx
+/my-components/MyButton/MyButton.pure.tsx
+/my-components/MyButton/MyButton.style.tsx
+
+/constants/colors.ts
+/constants/storageKeys.ts
 ```
 
 ## snake_case
@@ -78,14 +81,26 @@ export const colors = {
 export const en = {
   file_naming_conventions_in_react: "File naming conventions in react",
 };
-
 ```
 
-## camelCase
 
-variable that can process in app
+## UPPER_SNAKE_CASE
+
+constant that communicate with another program
 
 ```TSX
-const itemList = [];
-const myFunction = () => {};
+export const configs = {
+  WEB_BASE_URL: "https://www.my-web.com/",
+  API_BASE_URL: "https://www.my-api.com/",
+};
+
+export const storageKeys = {
+  NAVIGATION_STATE: "NAVIGATION_STATE",
+  USER_CACHE: "USER_CACHE",
+};
+
+export const collectionNames = {
+  USER_PROFILE: "userProfile",
+  COURSES: "courses",
+};
 ```
