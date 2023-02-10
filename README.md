@@ -25,19 +25,6 @@ const MyButton = (props: MyButtonProps) => <button />;
 const myButton = <MyButton shape={Shape.Circle} />;
 ```
 
-constant that can process in app
-
-```TSX
-const appConfigs = {
-    MaxItem: 10,
-    MaxTimeout: 6000,
-};
-
-const itemList = [];
-if (itemList.length <= appConfigs.MaxItem) {
-    itemList.push("123");
-}
-```
 
 ## kebab-case
 
@@ -49,7 +36,7 @@ if (itemList.length <= appConfigs.MaxItem) {
 ```
 
 ```TSX
-export const myImages =  {
+export const my_images =  {
   default_profile: "./default-profile.png",
 };
 ```
@@ -63,7 +50,7 @@ export const myImages =  {
 /my-components/MyButton/MyButton.style.tsx
 
 /constants/colors.ts
-/constants/storageKeys.ts
+/constants/storage_keys.ts
 ```
 
 ## snake_case
@@ -83,6 +70,20 @@ export const en = {
 };
 ```
 
+constant that can process in app
+
+```TSX
+const app_configs = {
+    max_item: 10,
+    max_timeout: 6000,
+};
+
+const itemList = [];
+if (itemList.length <= app_configs.max_item) {
+    itemList.push("123");
+}
+```
+
 
 ## UPPER_SNAKE_CASE
 
@@ -94,12 +95,12 @@ export const configs = {
   API_BASE_URL: "https://www.my-api.com/",
 };
 
-export const storageKeys = {
+export const storage_keys = {
   NAVIGATION_STATE: "NAVIGATION_STATE",
   USER_CACHE: "USER_CACHE",
 };
 
-export const collectionNames = {
+export const collection_names = {
   USER_PROFILE: "userProfile",
   COURSES: "courses",
 };
