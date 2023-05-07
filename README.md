@@ -1,6 +1,6 @@
 # react-naming
 
-File naming conventions in react
+File naming in react
 
 
 
