@@ -1,4 +1,4 @@
-# react-conventions
+# react-naming
 
 File naming conventions in react
 
